@@ -1,5 +1,5 @@
 ---
-title: "Reading 1 Estimating Market Risk Measures"
+title: "Estimating Market Risk Measures"
 layout: post
 ---
 # Estimating Returns
