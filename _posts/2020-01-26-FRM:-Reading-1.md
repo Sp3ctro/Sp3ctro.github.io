@@ -1,11 +1,9 @@
 ---
-title:"Reading 1: Estimating Market Risk Measures"
+title:"Reading 1 Estimating Market Risk Measures"
 layout: post
 ---
 # Estimating Returns
-Generally this is...
-<img src="http://www.sciweavers.org/tex2img.php?eq=P%2FL_t%20%3D%20P_t%20%2B%20D_t%20-%20P_t-1&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0" align="center" border="0" alt="P/L_t = P_t + D_t - P_t-1" width="178" height="19" />
-...and we will have to be mindful that interim payments (e.g. dividends) might not necessarily be reflected in the price of the security. 
+Generally this is...$P/L_t = P_t + D_t - P_t-1$...and we will have to be mindful that interim payments (e.g. dividends) might not necessarily be reflected in the price of the security. 
 
 **Arithmetic Return Data:** We should use this when the interim payments are not reinvested. Generally you would not use this for long time periods, as one would assume reinvestment for such periods.
 
