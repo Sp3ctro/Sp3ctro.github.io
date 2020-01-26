@@ -11,6 +11,8 @@ Generally this is...
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=r_t%20%3D%20%20%5Cfrac%7BP_t%20%2B%20D_t%20-%20P_%7Bt-1%7D%7D%7BP_%7Bt-1%7D%7D%20%3D%20%5Cfrac%7BP_t%20%2B%20D_t%7D%7BP_%7Bt-1%7D%7D%20-%201&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0" align="center" border="0" alt="r_t =  \frac{P_t + D_t - P_{t-1}}{P_{t-1}} = \frac{P_t + D_t}{P_{t-1}} - 1" width="253" height="40" />
 
+$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
+
 **Geometric Return Data:** We should use this to account for interim payment reinvestment. Log normal returns are used to ensure that an asset's price can never be negative, so it can be used for 1) Long time periods or 2) instruments which cannot have a value less than zero.
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=R_t%20%3D%20%20ln%2A%5Cfrac%7BP_t%20%2B%20D_t%7D%7BP_%7Bt-1%7D%7D&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0" align="center" border="0" alt="R_t =  ln*\frac{P_t + D_t}{P_{t-1}}" width="129" height="40" />
