@@ -2,6 +2,8 @@
 title: "Estimating Market Risk Measures"
 layout: post
 ---
+Estimating Returns; VAR Method, Expected Shortfall & Coherent Risk Measures.
+
 # Estimating Returns
 Generally this is...$P/L_t = P_t + D_t - P_t-1$...and we will have to be mindful that interim payments (e.g. dividends) might not necessarily be reflected in the price of the security. 
 
