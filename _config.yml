@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-UK
-title: Research Blog
+title: Uncentive
 email: Jasirl@gmail.com
-description:
+description: Research & Writings
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name: John Stone
+  name: John Andrew Stone
   twitter:
   picture:
 twitter_username:
