@@ -25,12 +25,9 @@ This method weights values either up or down based on the volatility at the time
 $r_{t,i} = \left ( \frac{\sigma_{T,i}}{\sigma_{t,i}} \right )r_{t,i}$
 
 Where...
-
-$r_{t,i}$ = the actual return for asset i on day t
-
-$\sigma_{t,i}$ = volatility forecast for asset i on day t (made at the end of day t-1)
-
-$\sigma_{T,i}$ = current forecast of volatility for asset i
+* $r_{t,i}$ = the actual return for asset i on day t
+* $\sigma_{t,i}$ = volatility forecast for asset i on day t (made at the end of day t-1)
+* $\sigma_{T,i}$ = current forecast of volatility for asset i
 
 So for example if Volatility is currently 1 and was 0.5 on the day of the observation, we will multiply the value from that particular day by 2 (1/0.5). This allows for VAR estimates which are higher than the vanilla Historical Method.
 
