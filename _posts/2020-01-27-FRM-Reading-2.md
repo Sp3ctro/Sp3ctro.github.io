@@ -2,24 +2,24 @@
 title: "Non-Parametric VAR Estimation"
 layout: post
 ---
-Non-Parametric Estimation and Bootstrapping; data-driven approaches where distributions are not specified.
+Non-Parametric VAR Estimation and Bootstrapping; data-driven approaches in which distributions are not specified, and data is embellished.
 
-# Non-Parametric Approaches
+# Non-Parametric VAR Approaches
 Parametric forms of estimation make very specific assumptions about distributions of data - for example, the assumption of a Normal or Lognormal distribution. Non-Parametric approaches use empirical data to drive the distribution's classification.
 
-## Bootstrap Historical Simulation
+## Bootstrap Historical VAR Simulation
 If Historical Simulation is the process of calculating VAR from a historical dataset, then the Bootstrap Historical Simulation method can be thought of as repeated Historical Simulation. With this method, we take repeated samples from the dataset, compute a Historical VAR, a "replace" the values back into the dataset. The term "replace" means that random samples are chosen repeatedly, and values chosen in a sample can be chosen again in future samples. This is performed *n* times, and the average of the *n* VARs computed is used.
 
 ## Improvements to the Historical VAR Simulation Method
 
-### Age-Weighted Historical Simulation
+### Age-Weighted Historical VAR Simulation
 An issue with Historical VAR is the concept that...why are all data points in the data set equally relevant? Why is the 95th data point important but the 96th is not, for example. Age-Weighting solves this issue, albeit in a simplistic way, by gradually reducing the weight of data points as we step back in time.
 
 $w(i) = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}$
 
 Where $\lambda$ is the decay factor, and $0<=\lambda<=1$. So for example w(1) would be $\lambda$ and w(2) would be $\lambda^2$. 
 
-### Volatility-Weighted Historical Simulation
+### Volatility-Weighted Historical VAR Simulation
 This method weights values either up or down based on the volatility at the time (via GARCH or EWMA). This serves to account for time-varying volatiity characteristics, to ensure that our VAR is not under or overestimated. 
 
 $r_{t,i} = \left ( \frac{\sigma_{T,i}}{\sigma_{t,i}} \right )r_{t,i}$
@@ -31,10 +31,10 @@ Where...
 
 So for example if Volatility is currently 1 and was 0.5 on the day of the observation, we will multiply the value from that particular day by 2 (1/0.5). This allows for VAR estimates which are higher than the vanilla Historical Method.
 
-### Correlation-Weighted Historical Simulation
+### Correlation-Weighted Historical VAR Simulation
 Correlation (or variance covariance) weighting is similar to Volatility weighting but applied to the correlation between assets in a portfolio.
 
-### Filtered Historical Simulation
+### Filtered Historical VAR Simulation
 This is a comprehensive approach in which - for each data point - conditional volatility models are applied, and standardisation is performed by dividing the datapoint by realised returns. Bootstrapping is used to simulate returns which incorporate current volatility levels.
 
 # Advantages and Disadvantages
