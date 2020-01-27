@@ -1,5 +1,5 @@
 ---
-title:"Non-Parametric Estimation Approaches"
+title: "Non-Parametric VAR Estimation"
 layout: post
 ---
 Non-Parametric Estimation and Bootstrapping; data-driven approaches where distributions are not specified.
