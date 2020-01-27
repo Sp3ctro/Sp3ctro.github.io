@@ -8,7 +8,7 @@ Non-Parametric Estimation and Bootstrapping; data-driven approaches where distri
 Parametric forms of estimation make very specific assumptions about distributions of data - for example, the assumption of a Normal or Lognormal distribution. Non-Parametric approaches use empirical data to drive the distribution's classification.
 
 ## Bootstrap Historical Simulation
-If Historical Simulation is the process of calculating VAR from a historical dataset, then the Bootstrap Historical Simulation method can be thought of as repeated Historical Simulation.
+If Historical Simulation is the process of calculating VAR from a historical dataset, then the Bootstrap Historical Simulation method can be thought of as repeated Historical Simulation. With this method, we take repeated samples from the dataset, compute a Historical VAR, a "replace" the values back into the dataset. The term "replace" means that random samples are chosen repeatedly, and values chosen in a sample can be chosen again in future samples. This is performed *n* times, and the average of the *n* VARs computed is used.
 
 ## Improvements to the Historical VAR Simulation Method
 
