@@ -5,13 +5,13 @@ layout: post
 Estimating Returns; VAR Method, Expected Shortfall & Coherent Risk Measures.
 
 # Estimating Returns
-Generally this is...$P/L_t = P_t + D_t - P_t-1$...and we will have to be mindful that interim payments (e.g. dividends) might not necessarily be reflected in the price of the security. 
+Generally, this is...$P/L_t = P_t + D_t - P_t-1$...and we will have to be mindful that interim payments (e.g. dividends) might not necessarily be reflected in the price of the security. 
 
-**Arithmetic Return Data:** We should use this when the interim payments are not reinvested. Generally you would not use this for long time periods, as one would assume reinvestment for such periods.
+**Arithmetic Return Data:** We should use this when the interim payments are not reinvested. We usually would not use this for long periods, as one would assume reinvestment for such periods.
 
 $r_t =  \frac{P_t + D_t - P_{t-1}}{P_{t-1}} = \frac{P_t + D_t}{P_{t-1}} - 1$
 
-**Geometric Return Data:** We should use this to account for interim payment reinvestment. Log normal returns are used to ensure that an asset's price can never be negative, so it can be used for 1) Long time periods or 2) instruments which cannot have a value less than zero.
+**Geometric Return Data:** We should use this to account for interim payment reinvestment. Lognormal returns are used to ensure that an asset's price can never be negative, so it can be used for 1) Long periods or 2) instruments which cannot have a value less than zero.
 
 $R_t =  ln*\frac{P_t + D_t}{P_{t-1}}$
 
@@ -23,17 +23,17 @@ Take all returns, order them by size. Historical VAR is the process of identifyi
 
 **Note**: Confidence Levels are the big values (e.g. 95%) whereas the significant levels are the smaller levels (e.g. 5%). 
 
-**Example** Identify the ordered observation in a sample of 1000 data points that corresponds to VAR at a 95% confidence level (5% significance level). 
+**Example** Identify the ordered observation in a sample of 1000 data points that correspond to VAR at a 95% confidence level (5% significance level). 
 
 We're looking for the data point which separates the 95% of the 1000 data points from the 5% of the data points. The tail is (a * n) + 1. So we do (0.05 * 1000) + 1 = 51. 51 is the data point we use as the Historical VAR for this calculation.
 
 **Note**: Be prepared to use both (a * n) + 1, as well as (a * n) for historical VAR.
 
-If you are told that historical returns follow a normal distribution, then you can look at the z-table for this. Historical VAR approaches are only sensible when 1) we expect future return distributions to remain similar to historical return distributons and 2) unchanging parameter values.
+If you are told that historical returns follow a normal distribution, then you can look at the z-table for this. Historical VAR approaches are only sensible when 1) we expect future return distributions to remain similar to historical return distributions and 2) unchanging parameter values.
 
 ## Parametric Estimation Method
 
-Parametric estimation method make specific assumptions about the underlying distribution of returns for an instrument. Two cases are mentioned which are 1) VAR for returns which follow a normal distribution and 2) VAR for returns which follow a lognormal distribution.
+Parametric VAR estimation methods make specific assumptions about the underlying distribution of returns for an instrument. Two cases are mentioned which are 1) VAR for returns which follow a normal distribution and 2) VAR for returns which follow a lognormal distribution.
 
 ### Normal VAR
 
