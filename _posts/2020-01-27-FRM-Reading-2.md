@@ -2,7 +2,7 @@
 title: "Non-Parametric VAR Estimation"
 layout: post
 ---
-Non-Parametric VAR Estimation and Bootstrapping; data-driven approaches in which distributions are not specified, and data is embellished.
+Non-Parametric VAR Estimation and Bootstrapping; data-driven approaches in which distributions are not specified, and data are embellished.
 
 # Non-Parametric VAR Approaches
 Parametric forms of estimation make very specific assumptions about distributions of data - for example, the assumption of a Normal or Lognormal distribution. Non-Parametric approaches use empirical data to drive the distribution's classification.
@@ -17,10 +17,10 @@ An issue with Historical VAR is the concept that...why are all data points in th
 
 $w(i) = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}$
 
-Where $\lambda$ is the decay factor, and $0<=\lambda<=1$. So for example w(1) would be $\lambda$ and w(2) would be $\lambda^2$. 
+Where $\lambda$ is the decay factor, and $0<=\lambda<=1$. For example, w(1) would be $\lambda$ and w(2) would be $\lambda^2$. 
 
 ### Volatility-Weighted Historical VAR Simulation
-This method weights values either up or down based on the volatility at the time (via GARCH or EWMA). This serves to account for time-varying volatiity characteristics, to ensure that our VAR is not under or overestimated. 
+This method weights values either up or down based on the volatility at the time (via GARCH or EWMA). This serves to account for time-varying volatility characteristics, to ensure that our VAR is not under or overestimated. 
 
 $r_{t,i} = \left ( \frac{\sigma_{T,i}}{\sigma_{t,i}} \right )r_{t,i}$
 
@@ -29,16 +29,16 @@ Where...
 * $\sigma_{t,i}$ = volatility forecast for asset i on day t (made at the end of day t-1)
 * $\sigma_{T,i}$ = current forecast of volatility for asset i
 
-So for example if Volatility is currently 1 and was 0.5 on the day of the observation, we will multiply the value from that particular day by 2 (1/0.5). This allows for VAR estimates which are higher than the vanilla Historical Method.
+For example, if volatility is currently 1 and was 0.5 on the day of the observation, we will multiply the value from that particular day by 2 (1/0.5). This allows for VAR estimates which are higher than the vanilla Historical Method.
 
 ### Correlation-Weighted Historical VAR Simulation
-Correlation (or variance covariance) weighting is similar to Volatility weighting but applied to the correlation between assets in a portfolio.
+Correlation (or variance-covariance) weighting is similar to Volatility weighting but applied to the correlation between assets in a portfolio.
 
 ### Filtered Historical VAR Simulation
 This is a comprehensive approach in which - for each data point - conditional volatility models are applied, and standardisation is performed by dividing the datapoint by realised returns. Bootstrapping is used to simulate returns which incorporate current volatility levels.
 
 # Advantages and Disadvantages
 
-The advantages are that non-parametric methods are simple, flexible and avoid complicated variance-covariance matricies and the likes. Furthermore we can apply time, volatility, and correlation-based weighting regimes on existing data relatively easily. 
+The advantages are that non-parametric methods are simple, flexible and avoid complicated variance-covariance matrices and the likes. Furthermore, we can apply time, volatility, and correlation-based weighting regimes to existing data with relative ease. 
 
 The disadvantages, however, are that non-parametric methods are highly dependant on data. Therefore if data exhibits characteristics which are either too high or too low, then our estimates will be misleading. Non-parametric methods will not be able to detect regime changes, and of course, if an instrument is new, we won't have any historical data to use at all.
