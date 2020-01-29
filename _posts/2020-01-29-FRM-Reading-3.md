@@ -71,7 +71,7 @@ Given...
 
 Compute the 1% VAR in percentage terms and the corresponding expected shortfall measure.
 
-$VAR = 1+\frac{0.75}{0.25}\left \{ \left [ \frac{1}{0.05}(1-0.99) \right ]^{-0.25}-1 \right \} = 2.486\%$
+$VAR = 1+\frac{0.75}{0.25}\left \\{ \left [ \frac{1}{0.05}(1-0.99) \right ]^{-0.25}-1 \right \\} = 2.486\%$
 
 $ES = \frac{2.486}{1-0.25} + \frac{0.75 - 0.25\times1}{1-0.25} = 3.981\%$
 
