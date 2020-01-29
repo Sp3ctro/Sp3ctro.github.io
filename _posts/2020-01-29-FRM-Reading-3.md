@@ -32,7 +32,7 @@ If $\xi > 0$ then the GEV becomes a Frechet distribution. If $\xi = 0$ then the 
 ## Peaks-Over-Threshold
 Peaks-Over-Threshold models the minima and maxima of a large sample. It defines a random variable *X* as being the loss, and defines *u* as being the threshold value for positive values of $x$. The distribution of excess losses over our threshold *u* is:
 
-$F_u(x) = P \{ X - u \leq x \mid X > u \} = \frac{F(x+u)-F(u)}{1-F(u)}$
+$$F_u(x) = P { X - u \leq x \mid X > u } = \frac{F(x+u)-F(u)}{1-F(u)}$$
 
 ## Generalised Pareto Distributions
 
