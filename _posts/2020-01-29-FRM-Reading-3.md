@@ -32,15 +32,15 @@ If $\xi > 0$ then the GEV becomes a Frechet distribution. If $\xi = 0$ then the 
 ## Peaks-Over-Threshold
 Peaks-Over-Threshold models the minima and maxima of a large sample. It defines a random variable *X* as being the loss, and defines *u* as being the threshold value for positive values of $x$. The distribution of excess losses over our threshold *u* is:
 
-$$F_u(x) = P { X - u \leq x \mid X > u } = \frac{F(x+u)-F(u)}{1-F(u)}$$
+$$F_u(x) = P \\{ X - u \leq x \mid X > u \\} = \frac{F(x+u)-F(u)}{1-F(u)}$$
 
 ## Generalised Pareto Distributions
 
 The Gnedenko-Pickands-Balkema-deHaan (GPBdH) theorem says that as *u* gets large, the distribution $F_u(X)$ converges to the generalised Pareto (GP) distribution, such that...
 
-$1 - \left [ 1+\frac{\xi }{\beta} \right ]^{-1/\xi} if \xi \neq 0$
+$$1 - \left [ 1+\frac{\xi }{\beta} \right ]^{-1/\xi} if \xi \neq 0$$
 
-$1 - exp \left [ -\frac{x}{\beta} \right ] if \xi = 0$
+$$1 - exp \left [ -\frac{x}{\beta} \right ] if \xi = 0$$
 
 The GP distribution dips below the normal distribution just before the tails, but then moves above the normal distribution around the extreme tails. 
 
@@ -50,7 +50,7 @@ The POT approach serves to add to the VAR estimation process, in which we can pr
 
 VAR with POT parameters is...
 
-$$
+$$VAR = u + \frac{\beta}{\xi}\left \\{ \left [ \frac{n}{N_u}(1- Confidence Level) \right ]^{-\xi}-1 \right \\}$$
 
 Where...
 * $u$ = threshold (in percentage)
