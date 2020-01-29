@@ -32,7 +32,7 @@ If $\xi > 0$ then the GEV becomes a Frechet distribution. If $\xi = 0$ then the 
 ## Peaks-Over-Threshold
 Peaks-Over-Threshold models the minima and maxima of a large sample. It defines a random variable *X* as being the loss, and defines *u* as being the threshold value for positive values of $x$. The distribution of excess losses over our threshold *u* is:
 
-$$F_u(x) = P \\{ X - u \leq x \mid X > u \\} = \frac{F(x+u)-F(u)}{1-F(u)}$$
+$$F_u(x) = P \lbrace X - u \leq x \mid X > u \rbrace = \frac{F(x+u)-F(u)}{1-F(u)}$$
 
 ## Generalised Pareto Distributions
 
@@ -50,7 +50,7 @@ The POT approach serves to add to the VAR estimation process, in which we can pr
 
 VAR with POT parameters is...
 
-$$VAR = u + \frac{\beta}{\xi}\left \\{ \left [ \frac{n}{N_u}(1- Confidence Level) \right ]^{-\xi}-1 \right \\}$$
+$$VAR = u + \frac{\beta}{\xi}\left \lbrace \left [ \frac{n}{N_u}(1- Confidence Level) \right ]^{-\xi}-1 \right \rbrace$$
 
 Where...
 * $u$ = threshold (in percentage)
@@ -59,7 +59,7 @@ Where...
 
 and Expected Shortfall is...
 
-$ES = \frac{VAR}{1-\xi}+\frac{\beta-\xi u}{1-\xi}$
+$$ES = \frac{VAR}{1-\xi}+\frac{\beta-\xi u}{1-\xi}$$
 
 ### Example - Compute VAR and ES given POT Parameters
 
