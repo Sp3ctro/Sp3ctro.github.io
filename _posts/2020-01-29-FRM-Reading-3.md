@@ -46,7 +46,7 @@ The GP distribution dips below the normal distribution just before the tails, bu
 
 ## VAR and Expected Shortfall
 
-The POT approach serves to add to the VAR estimation process, in which we can provide not only a VAR value, but also the expected shortfall when the VAR is exceeded (or in numerical terms; $E\left [ L_p \midL_p > VAR \right ]$). 
+The POT approach serves to add to the VAR estimation process, in which we can provide not only a VAR value, but also the expected shortfall when the VAR is exceeded (or in numerical terms; $E\left [ L_p \mid L_p > VAR \right ]$). 
 
 VAR with POT parameters is...
 
