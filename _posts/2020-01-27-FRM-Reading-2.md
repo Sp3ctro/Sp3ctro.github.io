@@ -15,14 +15,14 @@ If Historical Simulation is the process of calculating VAR from a historical dat
 ### Age-Weighted Historical VAR Simulation
 An issue with Historical VAR is the concept that...why are all data points in the data set equally relevant? Why is the 95th data point important but the 96th is not, for example. Age-Weighting solves this issue, albeit in a simplistic way, by gradually reducing the weight of data points as we step back in time.
 
-$w(i) = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}$
+$$w(i) = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}$$
 
 Where $\lambda$ is the decay factor, and $0<=\lambda<=1$. For example, w(1) would be $\lambda$ and w(2) would be $\lambda^2$. 
 
 ### Volatility-Weighted Historical VAR Simulation
 This method weights values either up or down based on the volatility at the time (via GARCH or EWMA). This serves to account for time-varying volatility characteristics, to ensure that our VAR is not under or overestimated. 
 
-$r_{t,i} = \left ( \frac{\sigma_{T,i}}{\sigma_{t,i}} \right )r_{t,i}$
+$$r_{t,i} = \left ( \frac{\sigma_{T,i}}{\sigma_{t,i}} \right )r_{t,i}$$
 
 Where...
 * $r_{t,i}$ = the actual return for asset i on day t
