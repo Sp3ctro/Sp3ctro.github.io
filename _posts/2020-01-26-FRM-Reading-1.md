@@ -1,5 +1,5 @@
 ---
-title: "Estimating Market Risk Measures"
+title: "Parametric VAR Estimation: Part 1"
 layout: post
 ---
 Estimating Returns; VAR Method, Expected Shortfall & Coherent Risk Measures.
