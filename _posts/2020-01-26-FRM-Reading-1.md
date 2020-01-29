@@ -9,11 +9,11 @@ Generally, this is...$P/L_t = P_t + D_t - P_t-1$...and we will have to be mindfu
 
 **Arithmetic Return Data:** We should use this when the interim payments are not reinvested. We usually would not use this for long periods, as one would assume reinvestment for such periods.
 
-$r_t =  \frac{P_t + D_t - P_{t-1}}{P_{t-1}} = \frac{P_t + D_t}{P_{t-1}} - 1$
+$$r_t =  \frac{P_t + D_t - P_{t-1}}{P_{t-1}} = \frac{P_t + D_t}{P_{t-1}} - 1$$
 
 **Geometric Return Data:** We should use this to account for interim payment reinvestment. Lognormal returns are used to ensure that an asset's price can never be negative, so it can be used for 1) Long periods or 2) instruments which cannot have a value less than zero.
 
-$R_t =  ln*\frac{P_t + D_t}{P_{t-1}}$
+$$R_t =  ln*\frac{P_t + D_t}{P_{t-1}}$$
 
 # Historical & Parametric VAR Estimation Approaches
 
@@ -37,18 +37,18 @@ Parametric VAR estimation methods make specific assumptions about the underlying
 
 ### Normal VAR
 
-$VAR(\alpha\%) = - \mu_{P/L} + \sigma_{P/L} * z_ \alpha$
+$$VAR(\alpha\%) = - \mu_{P/L} + \sigma_{P/L} * z_ \alpha$$
 
 Where μ and σ are the mean and standard deviation of the P&L distribution and z denotes the critical value of the standard normal distribution. In most cases, we won't know what the population μ and σ are, so we will likely use sample values.
 
 **VAR with Arithmetic Returns**
 If you have arithmetic returns, such as a mean return of 10% with a standard deviation of 20%, you adjust this by multiplying the VAR result by the Portfolio Value. 
 
-$VAR(\alpha\%) = (- \mu_{P/L} + \sigma_{P/L} * z_ \alpha) * P_{t-1}$
+$$VAR(\alpha\%) = (- \mu_{P/L} + \sigma_{P/L} * z_ \alpha) * P_{t-1}$$
 
 ### Lognormal VAR
 
-$VAR(\alpha\%) = P_{t-1}  \times (1-e^{\mu_{R}-\sigma_{R} * z_ \alpha})$
+$$VAR(\alpha\%) = P_{t-1}  \times (1-e^{\mu_{R}-\sigma_{R} * z_ \alpha})$$
 
 Lognormal VAR takes into account the concept of continuous-time returns, and/or continuously reinvested returns. The Lognormal distribution is right skewed - has a lot of positive outliers, and is bounded on the left by zero. 
 
