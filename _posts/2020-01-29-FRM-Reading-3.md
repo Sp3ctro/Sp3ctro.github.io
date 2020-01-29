@@ -11,9 +11,9 @@ Extreme values are rare; they manifest as a result of major market declines, col
 ## Fisher-Tippett Theorem
 The Fisher-Tippett Theorem suggests that as a sample set of *n* data points gets large, the distribution of extreme values, denoted by $M_n$, converges to the Generalised Extreme Value (GEV) Distribution.
 
-$\[F(X|\xi, \mu, \sigma) = exp\left [-\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )^{-1/\xi} \right ] if \xi \neq 0\]$
+$\[F(X\mid\xi, \mu, \sigma) = exp\left [-\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )^{-1/\xi} \right ] if \xi \neq 0\]$
 
-$F(X|\xi, \mu, \sigma) = exp\left [ -exp\left ( \frac{x-\mu}{\sigma} \right ) \right ] if \xi = 0$
+$F(X\mid\xi, \mu, \sigma) = exp\left [ -exp\left ( \frac{x-\mu}{\sigma} \right ) \right ] if \xi = 0$
 
 With the restriction of...
 
@@ -32,7 +32,7 @@ If $\xi > 0$ then the GEV becomes a Frechet distribution. If $\xi = 0$ then the 
 ## Peaks-Over-Threshold
 Peaks-Over-Threshold models the minima and maxima of a large sample. It defines a random variable *X* as being the loss, and defines *u* as being the threshold value for positive values of $x$. The distribution of excess losses over our threshold *u* is:
 
-$F_u(x) = P\left \{ X-u\leq x|X>u \right \} = \frac{F(x+u)-F(u)}{1-F(u)}$
+$F_u(x) = P\left \{ X-u\leq x\midX>u \right \} = \frac{F(x+u)-F(u)}{1-F(u)}$
 
 ## Generalised Pareto Distributions
 
@@ -46,7 +46,7 @@ The GP distribution dips below the normal distribution just before the tails, bu
 
 ## VAR and Expected Shortfall
 
-The POT approach serves to add to the VAR estimation process, in which we can provide not only a VAR value, but also the expected shortfall when the VAR is exceeded (or in numerical terms; $E\left [ L_p |L_p > VAR \right ]$). 
+The POT approach serves to add to the VAR estimation process, in which we can provide not only a VAR value, but also the expected shortfall when the VAR is exceeded (or in numerical terms; $E\left [ L_p \midL_p > VAR \right ]$). 
 
 VAR with POT parameters is...
 
