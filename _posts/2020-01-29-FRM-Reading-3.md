@@ -17,7 +17,7 @@ $$F(X\mid\xi, \mu, \sigma) = exp\left [ -exp\left ( \frac{x-\mu}{\sigma} \right 
 
 With the restriction of...
 
-$\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )>0$
+$$\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )>0$$
 
 Where...
 * $\mu$ is the location parameter
