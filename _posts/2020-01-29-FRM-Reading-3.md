@@ -1,5 +1,5 @@
 ---
-title: "Parametric VAR Estimation Approaches: Extreme Value"
+title: "Parametric VAR Estimation: Part 2"
 layout: post
 ---
 Modelling extreme outliers resulting from catastrophic and Black Swan-like events, using Generalised Extreme Value (GEV) distributions, and the Peaks-Over-Threshold approach.
