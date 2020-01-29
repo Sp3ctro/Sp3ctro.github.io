@@ -11,9 +11,9 @@ Extreme values are rare; they manifest as a result of major market declines, col
 ## Fisher-Tippett Theorem
 The Fisher-Tippett Theorem suggests that as a sample set of *n* data points gets large, the distribution of extreme values, denoted by $M_n$, converges to the Generalised Extreme Value (GEV) Distribution.
 
-$F(X \mid  \xi, \mu, \sigma) = exp\left [-\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )^{-1/\xi} \right ] if \xi \neq 0$
+$$F(X \mid  \xi, \mu, \sigma) = exp\left [-\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )^{-1/\xi} \right ] if \xi \neq 0$$
 
-$F(X\mid\xi, \mu, \sigma) = exp\left [ -exp\left ( \frac{x-\mu}{\sigma} \right ) \right ] if \xi = 0$
+$$F(X\mid\xi, \mu, \sigma) = exp\left [ -exp\left ( \frac{x-\mu}{\sigma} \right ) \right ] if \xi = 0$$
 
 With the restriction of...
 
