@@ -26,7 +26,7 @@ Where...
 If $\xi > 0$ then the GEV becomes a Frechet distribution. If $\xi = 0$ then the GEV becomes a Gumbel distibution. If $\xi < 0$ then the GEV becomes a Weibull distribution. The final case does not occur often in Financial Markets. When choosing whether to model a Frechet or Gumbel distribution we must consider the following pieces of information...
 
 1. If we're confident in the distribution, then we should assume that $\xi > 0$
-2. If we cannot reject the null hypothesis that $\zeta = 0$ then we should assume that $\xi = 0$
+2. If we cannot reject the null hypothesis that $\xi = 0$ then we should assume that $\xi = 0$
 3. If we're otherwise unsure we should probably use $\xi > 0$
 
 ## Peaks-Over-Threshold
