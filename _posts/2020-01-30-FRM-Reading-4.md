@@ -45,9 +45,9 @@ The unconditional coverage model is used to estimate a measure used to accept or
 $$LR_{uc} = -2ln\lbrace(1-p)^{T-N}p^N\rbrace+2LN\lbrace[1-(N/T)]^{T-N}(N/T)^N\rbrace$$
 
 Where...
- * $*p*$ = Probability Level
- * $*T*$ = Sample Size
- * $*N*$ = Number of Exceptions
+ * *$p$* = Probability Level
+ * *$T$* = Sample Size
+ * *$N$* = Number of Exceptions
  * *$LR_uc$* = Test Statistic for Unconditional Coverage (uc)
 
 The key value to remember when dealing with the $LR_{uc}$ is that we reject the hypothesis that the model is unbiased if the value is > 3.84. The issue with using a high confidence level (conversely a low probability-of-exception level) is that at these levels, such as the 99% level, few exceptions occur, meaning that the user will sometimes struggle to determine a model is biased or whether it is simply subject to relatively few exceptions. For this reason, often 95% confidence levels are used. 
