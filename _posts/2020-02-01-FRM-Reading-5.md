@@ -79,5 +79,5 @@ $$-\alpha S \sigma \sqrt{T}$$
 # Stress Testing
 Stressing a portfolio VAR involves - among other things - assuming that the correlation among assets in the portfolio is 1. This effectively throws away any diversification benefits we get from holding more than one asset and assumes the worst-case scenario; that the VAR of the portfolio is the sum of the VAR of each position.
 
-# Portfolio Benchmarking
+## Portfolio Benchmarking
 Portfolio benchmarking is the process of comparing the decomposed VAR of your portfolio to that of another portfolio.
