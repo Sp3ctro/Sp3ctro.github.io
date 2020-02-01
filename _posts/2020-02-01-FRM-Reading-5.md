@@ -4,17 +4,17 @@ layout: post
 ---
 Separating the risk of a multi-asset portfolio into distinct factor-based VARs, and the calculation of diversified, and undiversified VAR.
 
-## VAR Mapping Principles
+# VAR Mapping Principles
 VAR mapping is the process of measuring the risk of a portfolio in terms of risk factors common to the - potentially quite varied - book of assets. VAR mapping can also help measure the risk of assets which have little historical data available regarding them, by transforming the asset-specific risk into a general measure of risk exposure. An example of this is measuring the risk of a bond in terms of generalised interest-rate risk. 
 
-VAR mapping aggregaties risk exposure which removes the need to measure & manage the risk of each position in the portfolio individually
+VAR mapping aggregates risk exposure which removes the need to measure & manage the risk of each position in the portfolio individually
 1. VAR mapping expresses the portfolio's risk in terms of risk factors common to its positions
 2. VAR mapping facilitates risk aggregation across instruments where aggregation using price-based methods might not be possible
 3. VAR mapping is useful for measuring time-varying characteristics of portfolio risk
 4. VAR mapping is useful when historical data about a position is not available      
 
 ## The VAR Mapping Process
-The VAR mapping process involves reducing a portfolio of assets to a risk exposure expressed in terms of their *General Risk Factors*. Their *Specific Risk Factors* will be the individual position's idiocyncratic exposures; given we often deal with portfolios of dozens, hundreds or even thousands of positions with their own idiosyncratic risks, we can consider maximum diversification and simply ignore these positon-specific risks. 
+The VAR mapping process involves reducing a portfolio of assets to a risk exposure expressed in terms of their *General Risk Factors*. Their *Specific Risk Factors* will be the individual position's idiocyncratic exposures; given we often deal with portfolios of dozens, hundreds or even thousands of positions with their idiosyncratic risks, we can consider maximum diversification and simply ignore these position-specific risks. 
 
 For example, for Cash Equities, we can consider that a portfolio of 30 or more (or so) positions is sufficiently diversified, and that the idiosyncratic risk has been mostly mitigated. Each position in our portfolio will have an Equities Market Exposure of...
 
@@ -39,17 +39,17 @@ Specific Risk: $\sum_{i=1}^{N}\,W_{i}^{2}\,\times\,\sigma_{\epsilon, i}^{2}$
 ## VAR Mapping for Fixed Income Securities
 The three method of VAR mapping for fixed income securities are 1) principal mapping, 2) cash flow mapping and 3) duration mapping.
 
-*Pincipal Mapping*
-This method considers only the risk arising from repayment of the bond's principal. We use the average maturity of the portfolio to find an equivalent zero-coupon bond, and use that as a proxy. This is the simplest approach.
+*Principal Mapping*
+This method considers only the risk arising from the repayment of the bond's principal. We use the average maturity of the portfolio to find an equivalent zero-coupon bond, and use that as a proxy. This is the simplest approach.
 
 *Cash Flow mapping*
 The risk of each bond is decomposed into their respective cash flows. We use zero-coupon bonds as proxies for each cash flow and include inter-maturity correlations in the mapping process. 
 
 *Duration Mapping*
-The risk of the bond is mapped to a zero coupon bond of the same duration. This is similar to the first approach, but using duration. 
+The risk of the bond is mapped to a zero-coupon bond of the same duration. This is similar to the first approach, but using duration. 
 
 ## VAR Mapping for Linear Derivatives
-Linear Derivatives are generally risk-mapped by deomposing their cash flows and payoff profiles into their risk-factors. This is similar to the process where we replicate the payoff of the instrument using borrowing/lending at the risk free rate, and purchasing a bond or equity as we do with Options for example. 
+Linear Derivatives are generally risk-mapped by decomposing their cash flows and payoff profiles into their risk-factors. This is similar to the process where we replicate the payoff of the instrument using borrowing/lending at the risk-free rate and purchasing a bond or equity as we do with Options for example. 
 
 ### VAR Mapping for Forward Contracts
 Forward positions, such as a Long EURUSD Forward used in this example, can generally be decomposed into three separate risk positions...
@@ -63,7 +63,7 @@ These individual risk exposures can be used to compute the factor-based VAR.
 Forward Rate Agreements can be decomposed into long & short interest rate exposures; DV01 and/or Duration can be used once this is done.
 
 ### VAR Mapping for Interest Rate Swaps
-Taking a swap which pays a fixed rate in exchange for a floating rate, the steps required to compute the undiversified and diversified VARs is as follows: 
+Taking a swap which pays a fixed rate in exchange for a floating rate, the steps required to compute the undiversified and diversified VARs are as follows: 
 
 1) Calculate the PV of the short fixed-rate cash flows, and add the PV of a floating rate bond
 2) For each cash flow, compute the VAR at the desired confidence level; the sum is the undiversified VAR
@@ -74,10 +74,10 @@ Although Options have non-linear risk exposures, we can still use the delta-norm
 
 $$-\alpha S \sigma \sqrt{T}$$
 
-...Where *T* is expressed in terms of 1 year; in this example *T* is 1/252. 
+...Where *T* is expressed in terms of 1 year; in this example, *T* is 1/252. 
 
 # Stress Testing
-Stressing a portfolio VAR involves - among other things - assuming that the correlation among assets in the portfolio is 1. This effectively throws away any diversification benefits we get from holding more than one asset, and assumes the worst case scenario; that the VAR of of the portfolio is the sum of the VAR of each position.
+Stressing a portfolio VAR involves - among other things - assuming that the correlation among assets in the portfolio is 1. This effectively throws away any diversification benefits we get from holding more than one asset and assumes the worst-case scenario; that the VAR of the portfolio is the sum of the VAR of each position.
 
 # Portfolio Benchmarking
 Portfolio benchmarking is the process of comparing the decomposed VAR of your portfolio to that of another portfolio.
