@@ -2,7 +2,6 @@
 title: "VAR Mapping"
 layout: post
 ---
-This is a test.
 
 Separating the risk of a multi-asset portfolio into distinct factor-based VARs, and the calculation of diversified, and undiversified VAR.
 
