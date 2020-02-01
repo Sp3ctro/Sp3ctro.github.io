@@ -8,11 +8,11 @@ Separaing the risk of a multi-asset portfolio into distinct factor-based VARs, a
 VAR mapping is the process of measuring the risk of a portfolio in terms of risk factors common to the - potentially quite varied - book of assets. VAR mapping can also help measure the risk of assets which have little historical data available regarding them, by transforming the asset-specific risk into a general measure of risk exposure. An example of this is measuring the risk of a bond in terms of generalised interest-rate risk. 
 
 ## VAR Mapping Principles
-* VAR mapping aggregaties risk exposure which removes the need to measure & manage the risk of each position in the portfolio individually
-* VAR mapping expresses the portfolio's risk in terms of risk factors common to its positions
-* VAR mapping facilitates risk aggregation across instruments where aggregation using price-based methods might not be possible
-* VAR mapping is useful for measuring time-varying characteristics of portfolio risk
-* VAR mapping is useful when historical data about a position is not available      
+VAR mapping aggregaties risk exposure which removes the need to measure & manage the risk of each position in the portfolio individually
+1. VAR mapping expresses the portfolio's risk in terms of risk factors common to its positions
+2. VAR mapping facilitates risk aggregation across instruments where aggregation using price-based methods might not be possible
+3. VAR mapping is useful for measuring time-varying characteristics of portfolio risk
+4. VAR mapping is useful when historical data about a position is not available      
 
 ## The VAR Mapping Process
 The VAR mapping process involves reducing a portfolio of assets to a risk exposure expressed in terms of their *General Risk Factors*. Their *Specific Risk Factors* will be the individual position's idiocyncratic exposures; given we often deal with portfolios of dozens, hundreds or even thousands of positions with their own idiosyncratic risks, we can consider maximum diversification and simply ignore these positon-specific risks. 
