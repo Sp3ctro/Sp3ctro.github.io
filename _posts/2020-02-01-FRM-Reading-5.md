@@ -2,7 +2,7 @@
 title: "VAR Mapping"
 layout: post
 ---
-Separaing the risk of a multi-asset portfolio into distinct factor-based VARs, and the calculation of diversified, and undiversified VAR.
+Separating the risk of a multi-asset portfolio into distinct factor-based VARs, and the calculation of diversified, and undiversified VAR.
 
 # VAR Mapping
 VAR mapping is the process of measuring the risk of a portfolio in terms of risk factors common to the - potentially quite varied - book of assets. VAR mapping can also help measure the risk of assets which have little historical data available regarding them, by transforming the asset-specific risk into a general measure of risk exposure. An example of this is measuring the risk of a bond in terms of generalised interest-rate risk. 
