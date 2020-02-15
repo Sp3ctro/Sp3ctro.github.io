@@ -25,7 +25,7 @@ author:
   picture:
 twitter_username:
 github_username: Sp3ctro
-logo: /assets/images/logo.png
+logo: #
 search: true # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
