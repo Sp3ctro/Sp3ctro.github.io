@@ -81,7 +81,11 @@ This process gives us the covariance matrix. We will now use the formula $\sigma
 
 *Step 1: Multiply the Horizontal Beta Vector by the covariance matrix*
 
-$$\beta_h * C\newline= [8\\,\\,4] * \begin{pmatrix}0.000225 & 0.00018\\0.00018 & 0.0004 \end{pmatrix} \newline= [(8\times0.000225)+(4\times0.00018)\\,\\,\\,(8\times0.00018)+(4\times0.0004)]\newline=[0.00252\\,\\,\\,0.00304]$$
+$$\beta_h * C= [8\,\,4] * \begin{pmatrix}0.000225 & 0.00018\\0.00018 & 0.0004 \end{pmatrix}$$
+
+$$= [(8\times0.000225)+(4\times0.00018)\,\,\,(8\times0.00018)+(4\times0.0004)]$$
+
+$$=[0.00252\,\,\,0.00304]$$
 
 *Step 2: Multiply the Vertical Beta Vector by the results of Step 1*
 
