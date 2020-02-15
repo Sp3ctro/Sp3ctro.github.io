@@ -89,7 +89,11 @@ $$=[0.00252\,\,\,0.00304]$$
 
 *Step 2: Multiply the Vertical Beta Vector by the results of Step 1*
 
-$$(\beta_h\times C)\times\beta_v \newline= [0.00252\,\,\,0.00304]\begin{bmatrix} 8\\4\end{bmatrix}\newline = (0.00252\times8)+(0.00304\times4) = 0.03232$$
+$$(\beta_h\times C)\times\beta_v$$
+
+$$= [0.00252\,\,\,0.00304]\begin{bmatrix} 8\\4\end{bmatrix}$$
+
+$$= (0.00252\times8)+(0.00304\times4) = 0.03232$$
 
 *Step 3: Compute $\sigma_p$ by square-rooting the result*
 
