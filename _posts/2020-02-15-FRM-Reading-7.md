@@ -52,7 +52,8 @@ Where...
 Computing portfolio VAR using the variance-covariance method by hand is burdensome, but not impossible. An example is provided below. 
 
 *Example Portfolio VAR Calculation*
-Assume we have a two-asset portfolio with positions of $8m in Asset A, $4m in Asset B, a correlation coefficient of 0.6 with daily standard deviations of 1.5% and 2% for Assets A and B respectively. What is the 10-Day VAR at the 99% confidence level for this portfolio?
+
+Assume we have a two-asset portfolio with positions of \$8m in Asset A, \$4m in Asset B, a correlation coefficient of 0.6 with daily standard deviations of 1.5% and 2% for Assets A and B respectively. What is the 10-Day VAR at the 99% confidence level for this portfolio?
 
 In order to apply our $VAR_p = \sigma_p\alpha\sqrt{x}$ formula, we need the $\sigma_p$ parameter, which is dependant on a covariance matrix.
 
