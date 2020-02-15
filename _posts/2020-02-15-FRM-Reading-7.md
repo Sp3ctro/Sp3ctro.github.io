@@ -106,6 +106,6 @@ $$VAR_p = \sigma_p\alpha\sqrt{x} = 0.1798\times2.33\times\sqrt{10} = 1.3248$$
 The value is in terms of $USD millions. Note the BASEL committe requires banks to hold at least three times their 10-Day VAR to finance the trading book. 
 
 ## Correlation Swaps
-It is possible to purchase or sell correlation risk, or time-varying correlation, via the use of Correlation Swaps. The payoff of these swaps for a buyer is $notional amount \times (\rho_{realised}-\rho_{fixed})$, where...
+It is possible to purchase or sell correlation risk, or time-varying correlation, via the use of Correlation Swaps. The payoff of these swaps for a buyer is $notional\,amount \times (\rho_{realised}-\rho_{fixed})$, where...
 
 $$\rho_{realised} = \frac{2}{n^2-n}\sum_{i>j}\rho_{i,j}$$
