@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Correlation Modelling - Bottom-Up Approaches"
 layout: post
 ---
 Copulas and their use in modelling correlations for non-normally distributed variables. 
