@@ -4,7 +4,7 @@ layout: post
 ---
 Copulas and their use in modelling correlations for non-normally distributed variables. 
 
-# Copula Terminology
+# Relevant Terminology
 Before we discuss copulas, their forms, and how they can be used to model correlations, it is best to make some informal definitions clear...
 
 **Univariate Distribution**
