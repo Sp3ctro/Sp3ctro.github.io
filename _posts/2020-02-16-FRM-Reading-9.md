@@ -46,7 +46,7 @@ $\rho_F$ is the correlation matrix structure of the joint cumulative function F_
 **Note** if you only have two marginal distributions, you do not need to include a correlation matrix as part of $\rho_F$, you only need a single correlation term. 
 
 # Correlation Copulas
-A copula function can transform an n-dimensional function to a univariate function $C:[0,1]^n\rarrow[0,1]$. 
+A copula function can transform an n-dimensional function to a univariate function $C:[0,1]^n\rightarrow[0,1]$. 
 
 $$C[G_1(u_1),...,G_n(u_n)] = F_n[F_n^-1(G_1(u_1)),...,F_n^-1(G_n(u_n));\rho_F]$$
 
