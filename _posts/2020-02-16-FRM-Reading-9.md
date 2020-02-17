@@ -4,6 +4,10 @@ layout: post
 ---
 Copulas and their use in modelling correlations for non-normally distributed variables. 
 
+This is a text with a footnote[^1].
+
+[^1]: And here is the definition.
+
 # Relevant Terminology
 Before we discuss copulas, their forms, and how they can be used to model correlations, it is best to make some informal definitions clear...
 
