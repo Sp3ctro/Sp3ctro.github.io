@@ -4,30 +4,26 @@ layout: post
 ---
 Copulas and their use in modelling correlations for non-normally distributed variables. 
 
-This is a text with a footnote[^1].
-
-[^1]: And here is the definition.
-
 # Relevant Terminology
 Before we discuss copulas, their forms, and how they can be used to model correlations, it is best to make some informal definitions clear...
 
 **Univariate Distribution**
-A univariate distributon is the probability distribution of a single variable, or single number. Such distributions include the Normal, Student's T, Chi-Squared, F, Exponential, and Gamma distributions
+A univariate distribution is the probability distribution of a single variable or number. Such distributions include the Normal, Student's T, Chi-Squared, F, Exponential, and Gamma distributions
 
 **Marginal Distribution**
-A marginal distribution is the probability distribution of a sample set taken from another distribution. For example, if you have a vector of 100 observances; plotting the distributon of a sample of 20 of those observances is a marginal distribution. 
+A marginal distribution is the probability distribution of a sample set taken from another distribution. For example, if you have a vector of 100 observances; plotting the distribution of a sample of 20 of those observances is a marginal distribution. 
 
 **Multivariate Distribution**
-A multivariate distribution is a combination of 2 or more variables, such that a linear combination of those variables fits a distribution. For example the Standard Normal Multivariate Distribution is a vector of multiple normally distribted variables, such that any linear combination is also normally distributed.
+A multivariate distribution is a combination of 2 or more variables, such that a linear combination of those variables fits a distribution. For example, the Standard Normal Multivariate Distribution is a vector of multiple normally distributed variables, such that any linear combination is also normally distributed.
 
 **Joint Cumulative Distribution**
-A joint cumulative distribution function is a two-dimention cumulative distribution function. 
+A joint cumulative distribution function is a two-dimension cumulative distribution function. 
 
 **Inverse Functions**
 An inverse function is usually the inverted form of a probability distribution. 
 
 **Copula**
-A copula is a combination of two or more marginal distributions. Specifically it is a function which identifies how the values from two distributions "join together". Copulas are particularly useful at identifying the correlation between two variables which have non-normal distributions. 
+A copula is a combination of two or more marginal distributions. Specifically, it is a function which identifies how the values from two distributions "join together". Copulas are particularly useful at identifying the correlation between two variables which have non-normal distributions. 
 
 **Gaussian Copula**
 A Gaussian Copula is the "normal distribution" equivalent of a copula.
