@@ -8,7 +8,7 @@ Copulas and their use in modelling correlations for non-normally distributed var
 Before we discuss copulas, their forms, and how they can be used to model correlations, it is best to make some informal definitions clear...
 
 **Univariate Distribution**
-A univariate distribution is the probability distribution of a single variable or number. Such distributions include the Normal, Student's T, Chi-Squared, F, Exponential, and Gamma distributions
+A univariate distribution is the probability distribution of a single variable or number. Such distributions include the Normal, Student's T, Chi-Squared, F, Exponential, and Gamma distributions.
 
 **Marginal Distribution**
 A marginal distribution is the probability distribution of a sample set taken from another distribution. For example, if you have a vector of 100 observances; plotting the distribution of a sample of 20 of those observances is a marginal distribution. 
