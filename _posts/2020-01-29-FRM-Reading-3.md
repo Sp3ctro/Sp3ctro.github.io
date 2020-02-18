@@ -9,7 +9,9 @@ Modelling extreme outliers resulting from catastrophic and Black Swan-like event
 
 Extreme values are rare; they manifest as a result of major market declines, collapses of systematically important entities, or significant macroeconomic events. By definition, empirical data about these events are scarce. Distributions - which have an expected degree of error - are used to model these events.
 
-## Fisher-Tippett Theorem
+## Extreme Value Theory
+*Describe extreme value theory (EVT) and its use in risk management*
+
 The Fisher-Tippett Theorem suggests that as a sample set of *n* data points gets large, the distribution of extreme values, denoted by $M_n$, converges to the Generalised Extreme Value (GEV) Distribution.
 
 $$F(X \mid  \xi, \mu, \sigma) = exp\left [-\left ( 1+\xi\times\frac{x-\mu}{\sigma} \right )^{-1/\xi} \right ] if \xi \neq 0$$
