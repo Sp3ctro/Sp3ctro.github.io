@@ -9,6 +9,11 @@ VAR Model Validation with Expected Failure Rates using Unconditional and Conditi
 
 VAR backtesting is the process of analysing VAR model expectations versus realised returns. The comparison of the VAR model should be performed against *cleaned* returns, which are returns data which have been adjusted to remove effects which are not marked to market, such as funding costs, taxes, and so on.
 
+## VAR Backtesting Difficulties
+*Explain the significant difficulties in backtesting a VaR model*
+
+VAR estimations and backtests are static calculations, whereas portfolios, the inputs which govern their structure and exposures, and other factors are constantly changing. This leads to a scenario in which once a VAR backtest is done, it is almost instantly obsolete; at least technically. Backtests are analyses on samples of data, and although empirical in nature, they might not capture the full risk profile or behaviour of a portfolio.
+
 ## Failure Rates
 *Verify a model based on exceptions or failure rates*
 
