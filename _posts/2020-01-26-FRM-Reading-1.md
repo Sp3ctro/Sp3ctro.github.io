@@ -74,7 +74,7 @@ Estimating a loss quantile involves mapping or plotting the frequency of losses 
 
 Estimators, depending on how they are created and how they are calculated, have different levels of precision. An estimator which is highly imprecise and has a wide margin of error (or standard error) is not going to be hugely useful in all cases. In this context, it is useful to evaluate its standard error by calculating...
 
-$$[q+se(q)\times z_\alpha] > VAR > [q-se(q)\times z_alpha]$$
+$$[q+se(q)\times z_\alpha] > VAR > [q-se(q)\times z_{alpha}]$$
 
 Where...
 * $\alpha$ is the significance level
