@@ -12,6 +12,11 @@ Parametric forms of estimation make very specific assumptions about distribution
 
 If Historical Simulation is the process of calculating VAR from a historical dataset, then the Bootstrap Historical Simulation method can be thought of as repeated Historical Simulation. With this method, we take repeated samples from the dataset, compute a Historical VAR, a "replace" the values back into the dataset. The term "replace" means that random samples are chosen repeatedly, and values chosen in a sample can be chosen again in future samples. This is performed *n* times, and the average of the *n* VARs computed is used.
 
+## Non-Parametric VAR Estimation
+*Describe historical simulation using non-parametric density estimation*
+
+Historical simulation relies on observed data points. In this context, this implies that we have a limit number of observances to point to when performing analysis. If we have 50 data points and want to determine the 99th percentile VAR, we do not have a 49.5th data point to refer to. Non-Parametric Density Estimation resolves this issue by interpolating between observed data points.  
+
 ## Historical VAR Simulation Approaches
 *Compare and contrast the age-weighted, the volatility-weighted, the correlation-weighted and the filtered historical simulation approaches*
 
