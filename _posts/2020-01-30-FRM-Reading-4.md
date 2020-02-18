@@ -35,7 +35,7 @@ When using VAR to communicate or measure potential losses, we must choose a sens
 2. The expected period in which risk-taking/mitigation activity will not occur
 
 # Coverage Models
-Log-Likelihood ratios as used to determine model validity using tail values.
+Log-Likelihood ratios are used to determine model validity using tail values.
 
 ## Unconditional Coverage
 The unconditional coverage model is used to estimate a measure used to accept or reject a model. The term "unconditional" refers to the fact that the data points in the model are unrelated or unconditional to each other. The time-varying occurrence of VAR exceptions is not taken into account, so not serial-correlation is considered. The model uses a log-likelihood ratio (LR) and is defined as follows:
