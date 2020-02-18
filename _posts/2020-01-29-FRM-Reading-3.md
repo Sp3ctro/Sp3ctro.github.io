@@ -4,7 +4,9 @@ layout: post
 ---
 Modelling extreme outliers resulting from catastrophic and Black Swan-like events, using Generalised Extreme Value (GEV) distributions, and the Peaks-Over-Threshold approach.
 
-# Explain the importance and challenges of extreme values in risk management
+# Extreme Values
+*Explain the importance and challenges of extreme values in risk management*
+
 Extreme values are rare; they manifest as a result of major market declines, collapses of systematically important entities, or significant macroeconomic events. By definition, empirical data about these events are scarce. Distributions - which have an expected degree of error - are used to model these events.
 
 ## Fisher-Tippett Theorem
@@ -28,13 +30,14 @@ $\xi$ is the tail shape parameter and indicates the shape and/or heaviness of th
 2. If we cannot reject the null hypothesis that $\xi = 0$ then we should assume that $\xi = 0$
 3. If we're otherwise unsure we should probably use $\xi > 0$
 
-## Describe the peaks-over-threshold (POT) approach
+## Peaks-Over-Threshold
+*Describe the peaks-over-threshold (POT) approach*
+
 Peaks-Over-Threshold models the minima and maxima of a large sample. It defines a random variable *X* as being the loss, and defines *u* as being the threshold value for positive values of $x$. The distribution of excess losses over our threshold *u* is:
 
 $$F_u(x) = P \lbrace X - u \leq x \mid X > u \rbrace = \frac{F(x+u)-F(u)}{1-F(u)}$$
 
 ## Generalised Pareto Distributions
-
 The Gnedenko-Pickands-Balkema-deHaan (GPBdH) theorem says that as *u* gets large, the distribution $F_u(X)$ converges to the generalised Pareto (GP) distribution, such that...
 
 $$1 - \left [ 1+\frac{\xi }{\beta} \right ]^{-1/\xi} if \xi \neq 0$$
@@ -44,7 +47,6 @@ $$1 - exp \left [ -\frac{x}{\beta} \right ] if \xi = 0$$
 The GP distribution dips below the normal distribution just before the tails, but then moves above the normal distribution around the extreme tails. 
 
 ## VAR and Expected Shortfall
-
 The POT approach serves to add to the VAR estimation process, in which we can provide not only a VAR value, but also the expected shortfall when the VAR is exceeded (or in numerical terms; $E\left [ L_p \mid L_p > VAR \right ]$). 
 
 VAR with POT parameters is...
@@ -74,11 +76,12 @@ $VAR = 1+\frac{0.75}{0.25}\left \\{ \left [ \frac{1}{0.05}(1-0.99) \right ]^{-0.
 
 $ES = \frac{2.486}{1-0.25} + \frac{0.75 - 0.25\times1}{1-0.25} = 3.981\%$
 
-## Compare and contrast generalized extreme value and POT
-GEV focuses on the distribution of extreme values, whereas Peaks-Over-Threshold focuses on the distribution of values in excess a certain high mark threshold. 
+## Differences between GEV and POT
+*Compare and contrast generalized extreme value and POT* and *Evaluate the tradeoffs involved in setting the threshold level when applying the generalized Pareto (GP) distribution*
 
-## Evaluate the tradeoffs involved in setting the threshold level when applying the generalized Pareto (GP) distribution
-GEV requires more data than POT; however the POT approach requires us to pick a certain threshold to use, so there are trade-offs to both.
+GEV focuses on the distribution of extreme values, whereas Peaks-Over-Threshold focuses on the distribution of values in excess a certain high mark threshold.GEV requires more data than POT; however the POT approach requires us to pick a certain threshold to use, so there are trade-offs to both.
 
-## Explain the importance of multivariate EVT for risk management
+## Multivariate Extreme Value Theory
+*Explain the importance of multivariate EVT for risk management*
+
 Multivariate EVT focuses on tail dependance, such as when a major decline in one market can lead to a major decline in some related market. Multivariate EVT will use Extreme Value Copulas; a Copula being a combination of univariate distributions forming a new "combined" distribution. The observations which occur in a Multivariate EVT Copula decrease in frequency as we add more dimensions to the copula. E.g. if we have 2 dimensions each with a EV of 1 in 100 times, we'll only see an EV in the combined distribution 1 in 100 * 100 = 10,000 times.  
