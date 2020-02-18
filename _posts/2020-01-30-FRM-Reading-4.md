@@ -59,7 +59,7 @@ $$LR_{cc} = LR_{uc} + LR_{ind}$$
 
 At a 95% confidence level, we'll reject the unbiasedness of the model if $LR_{cc} > 5.99$, and we would reject the concept the indepdence of exceptions alone if $LR_{ind} > 3.84$
 
-## BASEL's Rules for VAR Backtesting
+## The BASEL Committee's Rules for VAR Backtesting
 *Describe the Basel rules for backtesting*
 
 The BASEL committee will penalise banks if their VAR models exhibit model misspecification. An example of such a violation would be excessive exception occurences for a 95% confidence level VAR model employed by a bank. The BASEL committee specifies a table split into three sections - the Green, Yellow and Red sections - which characterise the bank's models based on exception occurrences. In the Yellow zone - which is between 5 to 9 exceptions - several criteria are used by BASEL supervisors to determine the penalty rate to be applied to the bank. Those criteria include...
