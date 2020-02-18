@@ -15,7 +15,8 @@ $$r_t =  \frac{P_t + D_t - P_{t-1}}{P_{t-1}} = \frac{P_t + D_t}{P_{t-1}} - 1$$
 
 $$R_t =  ln*\frac{P_t + D_t}{P_{t-1}}$$
 
-# Estimate VaR using a historical simulation approach
+# Historical VAR Estimation
+*Estimate VaR using a historical simulation approach*
 
 Take all returns, order them by size. Historical VAR is the process of identifying the data point which separates the body of the distribution from the tail. The observation that determines VAR for *n* observations at the (1-a) confidence level would be (a * n) + 1.
 
@@ -29,7 +30,8 @@ We're looking for the data point which separates the 95% of the 1000 data points
 
 If you are told that historical returns follow a normal distribution, then you can look at the z-table for this. Historical VAR approaches are only sensible when 1) we expect future return distributions to remain similar to historical return distributions and 2) unchanging parameter values.
 
-# Estimate VaR using a parametric approach for both normal and lognormal return distributions
+# Parametric VAR Estimation
+*Estimate VaR using a parametric approach for both normal and lognormal return distributions*
 
 Parametric VAR estimation methods make specific assumptions about the underlying distribution of returns for an instrument. Two cases are mentioned which are 1) VAR for returns which follow a normal distribution and 2) VAR for returns which follow a lognormal distribution.
 
@@ -52,14 +54,17 @@ Lognormal VAR takes into account the concept of continuous-time returns, and/or 
 
 # Risk Measures
 
-## Estimate the expected shortfall given profit and loss (P/L) or return data
+## Expected Shortfall
+*Estimate the expected shortfall given profit and loss (P/L) or return data*
 
 Expected Shortfall is the average of the VAR in the tail mass of a VAR Calculation. For example, if the 5% VAR is $100, then the Expected Shortfall is the average of the 96, 97, 98 and 99 Confidence Level VARs. 
 
-## Define coherent risk measures
+## Coherent Risk Measures
+*Define coherent risk measures*
 
 This is where we take the entire return distribution and create a weighted average of VAR for several slices of the distribution. For example, if *n* is 10, then we split the distribution into *n-1* slices, and assign each slice a risk aversion level. 
 
-## Interpret quantile-quantile (QQ) plots to identify the characteristics of a distribution
+## Quantile-Quantile Plots (QQ Plots)
+*Interpret quantile-quantile (QQ) plots to identify the characteristics of a distribution*
 
 Quantile-Quantile (QQ) Plots are a way of identifying if empirical data matches a theoretical distribution (e.g. the Normal Distribution). Taking an example of comparing an empirical t-distribution vs. a normal distribution, we will see that within the 95% confidence level, the t-stats will match quite closely, but as the t-distribution has wider tails than the normal distribution, the t-stats at the 96%+ level will differ quite a lot.
