@@ -64,6 +64,11 @@ Expected Shortfall is the average of the VAR in the tail mass of a VAR Calculati
 
 This is where we take the entire return distribution and create a weighted average of VAR for several slices of the distribution. For example, if *n* is 10, then we split the distribution into *n-1* slices, and assign each slice a risk aversion level. 
 
+## Risk Measures & Quantiles
+*Estimate risk measures by estimating quantiles*
+
+Estimating a loss quantile involves mapping or plotting the frequency of losses on a distribution and separating them in terms of quantiles. This can be done on a percentage basis (e.g. the 90th %ile loss) or on a range basis, by identifying a "slice" of the distribution and determining a weighted average loss within that "slice".  
+
 ## Quantile-Quantile Plots (QQ Plots)
 *Interpret quantile-quantile (QQ) plots to identify the characteristics of a distribution*
 
