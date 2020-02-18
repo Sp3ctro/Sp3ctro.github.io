@@ -7,6 +7,7 @@ Separating the risk of a multi-asset portfolio into distinct factor-based VARs, 
 
 # What is VAR Mapping?
 *Explain the principles underlying VaR mapping and describe the mapping process.*
+
 VAR mapping is the process of measuring the risk of a portfolio in terms of risk factors common to the - potentially quite varied - book of assets. VAR mapping can also help measure the risk of assets which have little historical data available regarding them, by transforming the asset-specific risk into a general measure of risk exposure. An example of this is measuring the risk of a bond in terms of generalised interest-rate risk. 
 
 VAR mapping aggregates risk exposure which removes the need to measure & manage the risk of each position in the portfolio individually
@@ -17,6 +18,7 @@ VAR mapping aggregates risk exposure which removes the need to measure & manage 
 
 ## The VAR Mapping Process
 *Explain how the mapping process captures general and specific risks.*
+
 The VAR mapping process involves reducing a portfolio of assets to a risk exposure expressed in terms of their *General Risk Factors*. Their *Specific Risk Factors* will be the individual position's idiocyncratic exposures; given we often deal with portfolios of dozens, hundreds or even thousands of positions with their idiosyncratic risks, we can consider maximum diversification and simply ignore these position-specific risks. 
 
 For example, for Cash Equities, we can consider that a portfolio of 30 or more (or so) positions is sufficiently diversified, and that the idiosyncratic risk has been mostly mitigated. Each position in our portfolio will have an Equities Market Exposure of...
@@ -41,19 +43,21 @@ Specific Risk: $\sum_{i=1}^{N}\,W_{i}^{2}\,\times\,\sigma_{\epsilon, i}^{2}$
 
 ## VAR Mapping for Fixed Income Securities
 *Differentiate among the three methods of mapping portfolios of fixed income securities.*
+
 The three method of VAR mapping for fixed income securities are 1) principal mapping, 2) cash flow mapping and 3) duration mapping.
 
-*Principal Mapping*
+**Principal Mapping**
 This method considers only the risk arising from the repayment of the bond's principal. We use the average maturity of the portfolio to find an equivalent zero-coupon bond, and use that as a proxy. This is the simplest approach.
 
-*Cash Flow mapping*
+**Cash Flow mapping**
 The risk of each bond is decomposed into their respective cash flows. We use zero-coupon bonds as proxies for each cash flow and include inter-maturity correlations in the mapping process. 
 
-*Duration Mapping*
+**Duration Mapping**
 The risk of the bond is mapped to a zero-coupon bond of the same duration. This is similar to the first approach, but using duration. 
 
 ## VAR Mapping for Linear Derivatives
 *Summarize how to map a fixed income portfolio into positions of standard instruments.*
+
 Linear Derivatives are generally risk-mapped by decomposing their cash flows and payoff profiles into their risk-factors. This is similar to the process where we replicate the payoff of the instrument using borrowing/lending at the risk-free rate and purchasing a bond or equity as we do with Options for example. 
 
 ### VAR Mapping for Forward Contracts
@@ -83,8 +87,10 @@ $$-\alpha S \sigma \sqrt{T}$$
 
 # Stress Testing
 *Describe how mapping of risk factors can support stress testing.*
+
 Stressing a portfolio VAR involves - among other things - assuming that the correlation among assets in the portfolio is 1. This effectively throws away any diversification benefits we get from holding more than one asset and assumes the worst-case scenario; that the VAR of the portfolio is the sum of the VAR of each position.
 
 ## Portfolio Benchmarking
 *Explain how VaR can be used as a performance benchmark.*
+
 Portfolio benchmarking is the process of comparing the decomposed VAR of your portfolio to that of another portfolio.
