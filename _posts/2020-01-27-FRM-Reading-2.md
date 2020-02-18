@@ -7,10 +7,10 @@ Non-Parametric VAR Estimation and Bootstrapping; data-driven approaches in which
 # Non-Parametric VAR Approaches
 Parametric forms of estimation make very specific assumptions about distributions of data - for example, the assumption of a Normal or Lognormal distribution. Non-Parametric approaches use empirical data to drive the distribution's classification.
 
-## Bootstrap Historical VAR Simulation
+## Apply the bootstrap historical simulation approach to estimate coherent risk measures
 If Historical Simulation is the process of calculating VAR from a historical dataset, then the Bootstrap Historical Simulation method can be thought of as repeated Historical Simulation. With this method, we take repeated samples from the dataset, compute a Historical VAR, a "replace" the values back into the dataset. The term "replace" means that random samples are chosen repeatedly, and values chosen in a sample can be chosen again in future samples. This is performed *n* times, and the average of the *n* VARs computed is used.
 
-## Improvements to the Historical VAR Simulation Method
+## Compare and contrast the age-weighted, the volatility-weighted, the correlation-weighted and the filtered historical simulation approaches
 
 ### Age-Weighted Historical VAR Simulation
 An issue with Historical VAR is the concept that...why are all data points in the data set equally relevant? Why is the 95th data point important but the 96th is not, for example. Age-Weighting solves this issue, albeit in a simplistic way, by gradually reducing the weight of data points as we step back in time.
@@ -37,8 +37,7 @@ Correlation (or variance-covariance) weighting is similar to Volatility weightin
 ### Filtered Historical VAR Simulation
 This is a comprehensive approach in which - for each data point - conditional volatility models are applied, and standardisation is performed by dividing the datapoint by realised returns. Bootstrapping is used to simulate returns which incorporate current volatility levels.
 
-# Advantages and Disadvantages
-
+# Identify advantages and disadvantages of non-parametric estimation methods
 The advantages are that non-parametric methods are simple, flexible and avoid complicated variance-covariance matrices and the likes. Furthermore, we can apply time, volatility, and correlation-based weighting regimes to existing data with relative ease. 
 
 The disadvantages, however, are that non-parametric methods are highly dependant on data. Therefore if data exhibits characteristics which are either too high or too low, then our estimates will be misleading. Non-parametric methods will not be able to detect regime changes, and of course, if an instrument is new, we won't have any historical data to use at all.
