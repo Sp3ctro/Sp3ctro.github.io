@@ -67,7 +67,19 @@ This is where we take the entire return distribution and create a weighted avera
 ## Risk Measures & Quantiles
 *Estimate risk measures by estimating quantiles*
 
-Estimating a loss quantile involves mapping or plotting the frequency of losses on a distribution and separating them in terms of quantiles. This can be done on a percentage basis (e.g. the 90th %ile loss) or on a range basis, by identifying a "slice" of the distribution and determining a weighted average loss within that "slice".  
+Estimating a loss quantile involves mapping or plotting the frequency of losses on a distribution and separating them in terms of quantiles. This can be done on a percentage basis (e.g. the 90th %ile loss) or on a range basis, by identifying a "slice" of the distribution and determining a weighted average loss within that "slice".
+
+## The Standard Error of a Risk Measure
+*Evaluate estimators of risk measures by estimating their standard errors*
+
+Estimators, depending on how they are created and how they are calculated, have different levels of precision. An estimator which is highly imprecise and has a wide margin of error (or standard error) is not going to be hugely useful in all cases. In this context, it is useful to evaluate its standard error by calculating...
+
+$$[q+se(q)\times z_\alpha] > VAR > [q-se(q)\times z_alpha]$$
+
+Where...
+* $\alpha$ is the significance level
+* $q$ is the quantile
+* $se(q) = \frac{\sqrt{p(1-p)/n}}{f(q)}$
 
 ## Quantile-Quantile Plots (QQ Plots)
 *Interpret quantile-quantile (QQ) plots to identify the characteristics of a distribution*
