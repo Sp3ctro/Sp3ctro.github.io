@@ -31,6 +31,7 @@ There are various assets which can be traded, whose values are determined by the
 | Portfolio of Basket Option           | $max[\sum^{n}_{i=1}n_i \times S_i - K, 0]$ |
 
 # Correlation Risk Management, Correlation Swaps, and the 2007/8 Financial Crisis
+In the lead up to the 2007 financial crisis, Collateralised Debt Obligations, Constant-Proportion Debt Obligations (CPDOs) and Credit Default Swaps (CDS) enabled a great deal of speculation on real estate investments. The correlation copula model which became popular at the time requires correlation calculations for $[n \times (n-1)/2]$ assets in structured products, meaning that CDOs and CPDOs - many of which have hundreds of underlying assets - involved thousands of correlations. The expected tranching behaviour of these products failed to hold in 2007 when the subprime mortgage marked collapsed; defaults in the equity tranches increased the likelihood of default in mezzanine and investment grade tranches. This was further exacerbated by the realisation of wrong-way risk in the CDS market in which sellers of CDS were unable to meet their obligations due to risk concentration.   
 
 ## Risk Management
 *Estimate the impact of different correlations between assets in the trading book on the VaR capital charge.*
