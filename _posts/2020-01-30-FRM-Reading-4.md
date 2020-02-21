@@ -5,17 +5,17 @@ layout: post
 VAR Model Validation with Expected Failure Rates using Unconditional and Conditional Coverage models.
 
 # VAR Backtesting
-*LO 3a: Define backtesting and exceptions and explain the importance of backtesting VaR models*
+*LO 4a: Define backtesting and exceptions and explain the importance of backtesting VaR models*
 
 VAR backtesting is the process of analysing VAR model expectations versus realised returns. The comparison of the VAR model should be performed against *cleaned* returns, which are returns data which have been adjusted to remove effects which are not marked to market, such as funding costs, taxes, and so on.
 
 ## VAR Backtesting Difficulties
-*LO 3b: Explain the significant difficulties in backtesting a VaR model*
+*LO 4b: Explain the significant difficulties in backtesting a VaR model*
 
 VAR estimations and backtests are static calculations, whereas portfolios, the inputs which govern their structure and exposures, and other factors are constantly changing. This leads to a scenario in which once a VAR backtest is done, it is almost instantly obsolete; at least technically. Backtests are analyses on samples of data, and although empirical in nature, they might not capture the full risk profile or behaviour of a portfolio.
 
 ## Failure Rates
-*LO 3c: Verify a model based on exceptions or failure rates*
+*LO 4c: Verify a model based on exceptions or failure rates*
 
 Losses which exceed the VAR value at a given confidence level are referred to as *exceptions*. We expect to observe several exception data points in proportion to the confidence level; the implication being that too many or too few exceptions imply model misspecification. The *failure rate* is the number of exceptions as a proportion of the number of samples. The probability of an exception, *p*, is 1 - Confidence Level. *N* represents the number of exceptions; *T* represents the sample size. The failure rate is, therefore, *N/T* If the probability of an exception approaches and remains near the confidence level as the sample size increases, then we can consider the failure rate to be an unbiased measure. 
 
@@ -30,7 +30,7 @@ $$z = \frac{Exceptions-Probability(SampleSize)}{\sqrt{Probability(1-Probability)
 If the z-score is bigger than the critical value at the confidence level (e.g. 1.96 for 95%) then we can consider the failure rate to be biased. In more appropriate parlance, we would reject the null hypothesis that the model is unbiased. Hypothesis testing in this manner leads us neatly into our next topic.
 
 ## Type I and II Errors
-*LO 3d: Define and identify Type I and Type II errors*
+*LO 4d: Define and identify Type I and Type II errors*
 
 When testing the validity of a model such as described in the previous section, we have the chance of either rejecting a model which is valid or accepting a model which is invalid. These are Type I and Type II errors respectively. We must design a validity test which has a reasonable trade-off between the Type I and Type II errors. 
 
@@ -65,7 +65,7 @@ $$LR_{cc} = LR_{uc} + LR_{ind}$$
 At a 95% confidence level, we'll reject the unbiasedness of the model if $LR_{cc} > 5.99$, and we would reject the concept the indepdence of exceptions alone if $LR_{ind} > 3.84$
 
 ## The BASEL Committee's Rules for VAR Backtesting
-*LO 3F: Describe the Basel rules for backtesting*
+*LO 4F: Describe the Basel rules for backtesting*
 
 The BASEL committee will penalise banks if their VAR models exhibit model misspecification. An example of such a violation would be excessive exception occurences for a 95% confidence level VAR model employed by a bank. The BASEL committee specifies a table split into three sections - the Green, Yellow and Red sections - which characterise the bank's models based on exception occurrences. In the Yellow zone - which is between 5 to 9 exceptions - several criteria are used by BASEL supervisors to determine the penalty rate to be applied to the bank. Those criteria include...
 
