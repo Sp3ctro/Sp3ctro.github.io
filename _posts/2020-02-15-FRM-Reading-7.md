@@ -5,7 +5,7 @@ layout: post
 We examine the role that correlation plays in financial markets, using examples from products including Credit Default Swaps (CDS), collateralised debt obligations (CDOs) and multi-asset correlation options. 
 
 # Financial Correlation Risk
-*Describe financial correlation risk and the areas in which it appears in finance.*
+*Describe financial correlation risk and the areas in which it appears in finance*
 
 Correlation risk measures the risk of losses arising from changes in correlations between assets. Correlations between assets - both financial and non-financial - can be either Static or Dynamic. Static correlations remain fixed whereas Dynamic correlations are time-varying. 
 
@@ -34,7 +34,7 @@ There are various assets which can be traded, whose values are determined by the
 In the lead up to the 2007 financial crisis, Collateralised Debt Obligations, Constant-Proportion Debt Obligations (CPDOs) and Credit Default Swaps (CDS) enabled a great deal of speculation on real estate investments. The correlation copula model which became popular at the time requires correlation calculations for $[n \times (n-1)/2]$ assets in structured products, meaning that CDOs and CPDOs - many of which have hundreds of underlying assets - involved thousands of correlations. The expected tranching behaviour of these products failed to hold in 2007 when the subprime mortgage marked collapsed; defaults in the equity tranches increased the likelihood of default in mezzanine and investment grade tranches. This was further exacerbated by the realisation of wrong-way risk in the CDS market in which sellers of CDS were unable to meet their obligations due to risk concentration.   
 
 ## Risk Management
-*Estimate the impact of different correlations between assets in the trading book on the VaR capital charge.*
+*Estimate the impact of different correlations between assets in the trading book on the VaR capital charge*
 
 The formula for calculating VAR using the variance-covariance method is...
 
@@ -111,7 +111,7 @@ $$VAR_p = \sigma_p\alpha\sqrt{x} = 0.1798\times2.33\times\sqrt{10} = 1.3248$$
 The value is in terms of $USD millions. Note the BASEL committe requires banks to hold at least three times their 10-Day VAR to finance the trading book. 
 
 ## Correlation Swaps
-*Describe the structure, uses and payoffs of a correlation swap.*
+*Describe the structure, uses and payoffs of a correlation swap*
 
 It is possible to purchase or sell correlation risk, or time-varying correlation, via the use of Correlation Swaps. The payoff of these swaps for a buyer is $notional\,amount \times (\rho_{realised}-\rho_{fixed})$, where...
 
