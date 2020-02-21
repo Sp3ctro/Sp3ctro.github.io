@@ -5,12 +5,12 @@ layout: post
 Real life properties of Correlation.
 
 # Correlations During Different Economic States
-*Describe how equity correlations and correlation volatilities behave throughout various economic states*
+*LO 8a: Describe how equity correlations and correlation volatilities behave throughout various economic states*
 
 At a high level, equity correlations are highest in times of recessions and lowest in times of economic expansions. equity correlation volatility, however, is highest in normal market conditions, as there is uncertainty around which direction the economy will go. In other words; equity correlation gamma is high.
 
 ## Mean Reversion & Autocorrelation
-*Calculate a mean reversion rate using standard regression and calculate the corresponding autocorrelation*
+*LO 8b: Calculate a mean reversion rate using standard regression and calculate the corresponding autocorrelation*
 
 Mean reversion is statistically defined as...
 
@@ -39,7 +39,7 @@ Autocorrelation for a 1-period lag is...
 $$AC(\rho_t, \rho_{t-1}) = \frac{cov(\rho_t, \rho_{t-1})}{\sigma(\rho_t)\times(\sigma_{t-1})}$$
 
 ## Best Fit Distributions for Correlation Modelling
-*Identify the best-fit distribution for equity, bond and default correlations*
+*LO 8c: Identify the best-fit distribution for equity, bond and default correlations*
 
 Empirical studies[^1] performed on equity, bond and default correlations during normal market conditions and times of stress will produce different results depending on the distribution used. Furthermore, the robustness of these models will differ depending on the quality of fit of each distribution. The best fit and most robust distribution for Equity and Default Correlations is the Johnson SB distribution. The Generalised Extreme Value (GEV) distribution is best-fit for Bond correlations, but researchers note that the Normal distribution is also usable.
 
