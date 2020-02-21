@@ -56,7 +56,7 @@ The risk of each bond is decomposed into their respective cash flows. We use zer
 The risk of the bond is mapped to a zero-coupon bond of the same duration. This is similar to the first approach, but using duration. 
 
 ## VAR Mapping for Linear Derivatives
-*LO 5d: Summarize how to map a fixed income portfolio into positions of standard instruments*
+*LO 5d, 5g: Summarize how to map a fixed income portfolio into positions of standard instruments and Describe the method of mapping forwards, forward rate agreements, interest rate swaps and options.*
 
 Linear Derivatives are generally risk-mapped by decomposing their cash flows and payoff profiles into their risk-factors. This is similar to the process where we replicate the payoff of the instrument using borrowing/lending at the risk-free rate and purchasing a bond or equity as we do with Options for example. 
 
