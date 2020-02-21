@@ -43,4 +43,4 @@ $$AC(\rho_t, \rho_{t-1}) = \frac{cov(\rho_t, \rho_{t-1})}{\sigma(\rho_t)\times(\
 
 Empirical studies[^1] performed on equity, bond and default correlations during normal market conditions and times of stress will produce different results depending on the distribution used. Furthermore, the robustness of these models will differ depending on the quality of fit of each distribution. The best fit and most robust distribution for Equity and Default Correlations is the Johnson SB distribution. The Generalised Extreme Value (GEV) distribution is best-fit for Bond correlations, but researchers note that the Normal distribution is also usable.
 
-[^1] Meissner, G. (2014). Correlation risk modeling and management. Singapore: John Wiley & Sons.
+[^1]: Meissner, G. (2014). Correlation risk modeling and management. Singapore: John Wiley & Sons.
