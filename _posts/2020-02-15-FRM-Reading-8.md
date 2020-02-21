@@ -5,12 +5,12 @@ layout: post
 Real life properties of Correlation.
 
 # Correlations During Different Economic States
-*Describe how equity correlations and correlation volatilities behave throughout various economic states.*
+*Describe how equity correlations and correlation volatilities behave throughout various economic states*
 
 At a high level, equity correlations are highest in times of recessions and lowest in times of economic expansions. equity correlation volatility, however, is highest in normal market conditions, as there is uncertainty around which direction the economy will go. In other words; equity correlation gamma is high.
 
 ## Mean Reversion & Autocorrelation
-*Calculate a mean reversion rate using standard regression and calculate the corresponding autocorrelation.*
+*Calculate a mean reversion rate using standard regression and calculate the corresponding autocorrelation*
 
 Mean reversion is statistically defined as...
 
