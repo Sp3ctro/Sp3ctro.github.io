@@ -6,7 +6,7 @@ layout: post
 Separating the risk of a multi-asset portfolio into distinct factor-based VARs, and the calculation of diversified, and undiversified VAR.
 
 # What is VAR Mapping?
-*Explain the principles underlying VaR mapping and describe the mapping process*
+*LO 5a: Explain the principles underlying VaR mapping and describe the mapping process*
 
 VAR mapping is the process of measuring the risk of a portfolio in terms of risk factors common to the - potentially quite varied - book of assets. VAR mapping can also help measure the risk of assets which have little historical data available regarding them, by transforming the asset-specific risk into a general measure of risk exposure. An example of this is measuring the risk of a bond in terms of generalised interest-rate risk. 
 
@@ -17,7 +17,7 @@ VAR mapping aggregates risk exposure which removes the need to measure & manage 
 4. VAR mapping is useful when historical data about a position is not available      
 
 ## The VAR Mapping Process
-*Explain how the mapping process captures general and specific risks*
+*LO 5b: Explain how the mapping process captures general and specific risks*
 
 The VAR mapping process involves reducing a portfolio of assets to a risk exposure expressed in terms of their *General Risk Factors*. Their *Specific Risk Factors* will be the individual position's idiocyncratic exposures; given we often deal with portfolios of dozens, hundreds or even thousands of positions with their idiosyncratic risks, we can consider maximum diversification and simply ignore these position-specific risks. 
 
@@ -42,7 +42,7 @@ General Market Risk: $\beta_{P}^{2}\,\times\,V(R_M)$
 Specific Risk: $\sum_{i=1}^{N}\,W_{i}^{2}\,\times\,\sigma_{\epsilon, i}^{2}$
 
 ## VAR Mapping for Fixed Income Securities
-*Differentiate among the three methods of mapping portfolios of fixed income securities*
+*LO 5c: Differentiate among the three methods of mapping portfolios of fixed income securities*
 
 The three method of VAR mapping for fixed income securities are 1) principal mapping, 2) cash flow mapping and 3) duration mapping.
 
@@ -56,7 +56,7 @@ The risk of each bond is decomposed into their respective cash flows. We use zer
 The risk of the bond is mapped to a zero-coupon bond of the same duration. This is similar to the first approach, but using duration. 
 
 ## VAR Mapping for Linear Derivatives
-*Summarize how to map a fixed income portfolio into positions of standard instruments*
+*LO 5d: Summarize how to map a fixed income portfolio into positions of standard instruments*
 
 Linear Derivatives are generally risk-mapped by decomposing their cash flows and payoff profiles into their risk-factors. This is similar to the process where we replicate the payoff of the instrument using borrowing/lending at the risk-free rate and purchasing a bond or equity as we do with Options for example. 
 
@@ -86,11 +86,11 @@ $$-\alpha S \sigma \sqrt{T}$$
 ...Where *T* is expressed in terms of 1 year; in this example, *T* is 1/252. 
 
 # Stress Testing
-*Describe how mapping of risk factors can support stress testing*
+*LO 5e: Describe how mapping of risk factors can support stress testing*
 
 Stressing a portfolio VAR involves - among other things - assuming that the correlation among assets in the portfolio is 1. This effectively throws away any diversification benefits we get from holding more than one asset and assumes the worst-case scenario; that the VAR of the portfolio is the sum of the VAR of each position.
 
 ## Portfolio Benchmarking
-*Explain how VaR can be used as a performance benchmark*
+*LO 5f: Explain how VaR can be used as a performance benchmark*
 
 Portfolio benchmarking is the process of comparing the decomposed VAR of your portfolio to that of another portfolio.
