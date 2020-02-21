@@ -23,7 +23,7 @@ A joint cumulative distribution function is a two-dimension cumulative distribut
 An inverse function is usually the inverted form of a probability distribution. 
 
 **Copula**
-*Explain the purpose of copula functions and the translation of the copula equation.*
+*Explain the purpose of copula functions and the translation of the copula equation*
 
 A copula is a combination of two or more marginal distributions. Specifically, it is a function which identifies how the values from two distributions "join together". Copulas are particularly useful at identifying the correlation between two variables which have non-normal distributions. 
 
@@ -57,7 +57,7 @@ $\rho_F$ is the correlation matrix structure of the joint cumulative function F_
 **Note** if you only have two marginal distributions, you do not need to include a correlation matrix as part of $\rho_F$, you only need a single correlation term. 
 
 ## Gaussian Copulas
-*Describe the Gaussian copula and explain how to use it to derive the joint probability of default of two assets.*
+*Describe the Gaussian copula and explain how to use it to derive the joint probability of default of two assets*
 
 Gaussian copulas map marginal distributions - which have unknown properties - to the normal distribution. This is done by mapping values from one distribution to the other on a percentile basis. This is often used in Finance to create Gaussian Default Time copulas. A gaussian copula - using $N_1^-1$ as the inverse of the standard normal distribution - $can be defined for n-variates as...
 
@@ -68,6 +68,6 @@ In finance, Gaussian Defualt Time Copulas can be created by using this process a
 $$C_{GD}[Q_i(t),...,Q_n(t)] = M_n[N_1^{-1}(Q_1(t)),...,N_n^{-1}(Q_n(t));\rho_M]$$
 
 ## Correlated Default Time
-*Summarize the process of finding the default time of an asset correlated to all other assets in a portfolio using the Gaussian copula.*
+*Summarize the process of finding the default time of an asset correlated to all other assets in a portfolio using the Gaussian copula*
 
 For fixed income assets, if we want to evaluate the relationship of an asset's default time to more than 1 other instrument - for example, a big portfolio of intruments - we can use a Cholesky Decomposition.
