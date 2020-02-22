@@ -71,3 +71,7 @@ $$C_{GD}[Q_i(t),...,Q_n(t)] = M_n[N_1^{-1}(Q_1(t)),...,N_n^{-1}(Q_n(t));\rho_M]$
 *LO 9c: Summarize the process of finding the default time of an asset correlated to all other assets in a portfolio using the Gaussian copula*
 
 For fixed income assets, if we want to evaluate the relationship of an asset's default time to more than 1 other instrument - for example, a big portfolio of intruments - we can use a Cholesky Decomposition.
+
+__References__
+
+*Gunter Meissner, Correlation Risk Modeling and Management, 2nd Edition. Chapter 5. Financial Correlation Modeling—Bottom-Up Approaches (pages 126-134 only)*
