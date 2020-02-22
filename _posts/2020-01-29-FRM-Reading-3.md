@@ -87,3 +87,7 @@ GEV focuses on the distribution of extreme values, whereas Peaks-Over-Threshold 
 *LO 3f: Explain the importance of multivariate EVT for risk management*
 
 Multivariate EVT focuses on tail dependance, such as when a major decline in one market can lead to a major decline in some related market. Multivariate EVT will use Extreme Value Copulas; a Copula being a combination of univariate distributions forming a new "combined" distribution. The observations which occur in a Multivariate EVT Copula decrease in frequency as we add more dimensions to the copula. E.g. if we have 2 dimensions each with a EV of 1 in 100 times, we'll only see an EV in the combined distribution 1 in 100 * 100 = 10,000 times.  
+
+__References__
+
+*Kevin Dowd, Measuring Market Risk, 2nd Edition (West Sussex, UK: John Wiley & Sons, 2005). Chapter 7. Parametric Approaches (II): Extreme Value*
