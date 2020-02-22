@@ -118,3 +118,7 @@ The value is in terms of $USD millions. Note the BASEL committe requires banks t
 It is possible to purchase or sell correlation risk, or time-varying correlation, via the use of Correlation Swaps. The payoff of these swaps for a buyer is $notional\,amount \times (\rho_{realised}-\rho_{fixed})$, where...
 
 $$\rho_{realised} = \frac{2}{n^2-n}\sum_{i>j}\rho_{i,j}$$
+
+__References__
+
+*Gunter Meissner, Correlation Risk Modeling and Management, 2nd Edition (Risk Books, 2019). Chapter 1. Correlation Basics: Definitions, Applications, and Terminology*
