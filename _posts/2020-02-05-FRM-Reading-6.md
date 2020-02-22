@@ -37,3 +37,7 @@ A firm's businesses are a set of portfolios which make up an overall entity-leve
 *LO 6f: Describe the relationship between leverage, market value of asset and VaR within an active balance sheet management framework*
 
 Balance sheets tend to be procyclical, meaning that as prices rise, capital requirements will also rise. Leverage is counter-cyclical meaning that as prices rise leverage declines and vice-versa. Oftentimes target VAR levels are constrained by a bank's equity, and due to the previously mentioned procyclicality of balance sheet sizes, economic and price grown can increase risk-taking activity.  
+
+__References__
+
+*“Messages from the academic literature on risk measurement for the trading book,” Basel Committee on Banking Supervision, Working Paper, No. 19, Jan 2011.*
