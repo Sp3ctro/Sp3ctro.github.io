@@ -94,3 +94,7 @@ Stressing a portfolio VAR involves - among other things - assuming that the corr
 *LO 5f: Explain how VaR can be used as a performance benchmark*
 
 Portfolio benchmarking is the process of comparing the decomposed VAR of your portfolio to that of another portfolio.
+
+__References__
+
+*Philippe Jorion, Value at Risk: The New Benchmark for Managing Financial Risk, 3rd Edition (New York, NY: McGraw-Hill, 2007). Chapter 11. VaR Mapping*
