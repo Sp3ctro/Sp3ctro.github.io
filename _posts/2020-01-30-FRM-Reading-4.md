@@ -73,3 +73,7 @@ The BASEL committee will penalise banks if their VAR models exhibit model misspe
 2. Penalty Applied: Model Accuracy
 3. Penalty Considered: Intraday Trading Activity
 4. Entirely Discretionary: Luck
+
+__References__
+
+*Philippe Jorion, Value at Risk: The New Benchmark for Managing Financial Risk, 3rd Edition (New York, NY: McGraw-Hill, 2007). Chapter 6. Backtesting VaR*
