@@ -85,3 +85,7 @@ Where...
 *LO 1g: Interpret quantile-quantile (QQ) plots to identify the characteristics of a distribution*
 
 Quantile-Quantile (QQ) Plots are a way of identifying if empirical data matches a theoretical distribution (e.g. the Normal Distribution). Taking an example of comparing an empirical t-distribution vs. a normal distribution, we will see that within the 95% confidence level, the t-stats will match quite closely, but as the t-distribution has wider tails than the normal distribution, the t-stats at the 96%+ level will differ quite a lot.
+
+__References__
+
+*Kevin Dowd, Measuring Market Risk, 2nd Edition (West Sussex, UK: John Wiley & Sons, 2005). Chapter 3. Estimating Market Risk Measures: An Introduction and Overview*
