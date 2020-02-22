@@ -51,3 +51,7 @@ This is a comprehensive approach in which - for each data point - conditional vo
 The advantages are that non-parametric methods are simple, flexible and avoid complicated variance-covariance matrices and the likes. Furthermore, we can apply time, volatility, and correlation-based weighting regimes to existing data with relative ease. 
 
 The disadvantages, however, are that non-parametric methods are highly dependant on data. Therefore if data exhibits characteristics which are either too high or too low, then our estimates will be misleading. Non-parametric methods will not be able to detect regime changes, and of course, if an instrument is new, we won't have any historical data to use at all.
+
+__References__
+
+*Kevin Dowd, Measuring Market Risk, 2nd Edition (West Sussex, UK: John Wiley & Sons, 2005). Chapter 4. Non-parametric Approaches*
